@@ -6,7 +6,7 @@ from datetime import date
 
 
 
-API_KEY = os.environ['API']
+API_KEY = os.getenv('API')
 bot = telebot.TeleBot(API_KEY)
 
 today = date.today()
